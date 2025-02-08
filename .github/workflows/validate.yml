@@ -17,5 +17,5 @@ jobs:
         uses: joeytakeda/xml-validate-action@main
         with:
             rng: ${{ github.workspace }}/ATN.rng
-            dir: ${{ github.workspace }}/data
+            dir: ${{ github.workspace }}/xml
             failOnError: true
