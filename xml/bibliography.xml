@@ -19,6 +19,11 @@
      <encodingDesc>
         <schemaRef url="https://github.com/DiSA-DHIL/ATN-Schema/blob/main/sch/ATN.odd"/>
      </encodingDesc>
+     <profileDesc>
+        <textClass>
+           <catRef scheme="atn:DocType" target="atn:Database"/>
+        </textClass>
+     </profileDesc>
   </teiHeader>
   <text>
       <body>

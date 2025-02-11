@@ -11,8 +11,8 @@
             <!--Add respStmts here-->
          </titleStmt>
          <publicationStmt>
-            <distributor>Digital Scholarship in the Arts</distributor>
-            <distributor>Digital Humanities Innovation Lab</distributor>
+            <distributor ref="org:DiSA">Digital Scholarship in the Arts</distributor>
+            <distributor ref="org:DHIL">Digital Humanities Innovation Lab</distributor>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -21,6 +21,11 @@
      <encodingDesc>
         <schemaRef url="https://github.com/DiSA-DHIL/ATN-Schema/blob/main/sch/ATN.odd"/>
      </encodingDesc>
+     <profileDesc>
+        <textClass>
+           <catRef scheme="atn:DocType" target="atn:BornDigital"/>
+        </textClass>
+     </profileDesc>
      <revisionDesc>
         <!--Enter details here of major revisions to files-->
         <change></change>
@@ -28,14 +33,19 @@
   </teiHeader>
   <text>
       <body>
-         <p>Some text here.</p>
+         <div>
+            <head>About</head>
+            <p><!--Fill in information here about the project--></p>
+         </div>
       </body>
      <back>
         <listPerson type="contributors">
            <head>Contributors</head>
-           <person></person>
-           <!--Enter in your details here, giving yourself an xml:id
-                 
+           <person>
+              
+           </person>
+           <!--Enter in your details here, giving yourself an xml:id-->
+           <!--     
                  <person xml:id="MyName1">
                      <persName>
                         <forename></forename>
@@ -49,7 +59,12 @@
               -->
         </listPerson>
         <listOrg>
-           <org></org>
+           <org xml:id="DiSA">
+              <orgName>Digital Scholarship in the Arts</orgName>
+           </org>
+           <org xml:id="DHIL">
+              <orgName>Digital Humanities Innovation Lab</orgName>
+           </org>
            <!--Enter in any organizations to acknowledge—e.g. universities, funders, et cetera-->
         </listOrg>
      </back>
